@@ -3,6 +3,7 @@ package com.n2isys.kobasic01
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.n2isys.kobasic01.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -15,11 +16,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.clickBtn.setOnClickListener {
 
-            Log.d( "메인화면로그", "클릭용 버튼 눌림")
-            Log.e("메인화면로그","에러 관련 로그")
+            Log.d( "메인화면에서 찍는로그", "클릭용 버튼 눌림")
+            Log.e("메인화면로그","에러관련로그")
         }
 
+        binding.clickSmBtn.setOnClickListener {
+            Toast.makeText(this, "작은버튼이 눌렸다", Toast.LENGTH_SHORT).show()
 
+        }
 
 
     }
