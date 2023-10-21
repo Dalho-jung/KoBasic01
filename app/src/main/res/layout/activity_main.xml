@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -12,5 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="클릭용 버튼" />
+
+    <Button
+        android:id="@+id/clickSmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작은 버튼" />
 
 </LinearLayout>
