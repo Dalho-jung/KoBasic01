@@ -18,6 +18,14 @@ class MainActivity : AppCompatActivity() {
 
             Log.d( "메인화면에서 찍는로그", "클릭용 버튼 눌림")
             Log.e("메인화면로그","에러관련로그")
+
+            val myAge = 25
+            if(myAge >= 20){
+                Log.d("성인판별","성인이 맞습니다.")
+
+            }else{
+
+            }
         }
 
         binding.clickSmBtn.setOnClickListener {
